@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        #menu h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 350px;
+        }
+
+        article img {
+            width: 150px;
+            flex-shrink: 0;
+        }
+
+        article h3,
+        article p {
+            text-align: center;
+        }
+
+        article p {
+            margin: 0;
+            text-align: center;
+        }
+
+        #header-img {
+            width: 50px;
+            border: none;
+        }
+
+        #order-form h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f8f8f8;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            img {
+                width: 100%;
+            }
+
+            header,
+            nav,
+            main,
+            footer {
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            article {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        p,
+        label,
+        textarea,
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .order-section {
+            margin-bottom: 20px;
+        }
+    </style>
+    <title>Meghan's Cafe</title>
+</head>
+
+<body>
+    <header>
+        <h1>Meghan's Cafe</h1>
+        <img id="header-img" src="https://cdn-icons-png.flaticon.com/128/751/751621.png" alt="Coffee cup logo">
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order Form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <section id="menu">
+            <h2>Place Your Order</h2>
+            <article>
+                <h3>Matcha Latte</h3>
+                <img src="https://i.pinimg.com/736x/89/a1/c2/89a1c223457d466f8e278c1f42fc7035.jpg"
+                    alt="Matcha Latte in a cup with frothy green matcha on top" />
+                <p>
+                    Experience the rich and earthy flavors of our Matcha Latte, made with premium Japanese
+                    ceremony-grade matcha. Enjoy it hot for a comforting treat or cold for a refreshing twist.
+                    <br><br><span><em>$8</em></span>
+                </p>
+            </article>
+            <article>
+                <h3>Americano</h3>
+                <img src="https://i.pinimg.com/564x/d6/f2/e9/d6f2e9113aa8f9aef8b59a8e28bd7255.jpg"
+                    alt="Americano coffee in a cup" />
+                <p>
+                    A classic Americano, brewed to perfection with bold, smooth espresso, topped with hot water or ice,
+                    creating a satisfying coffee experience.
+                    <br><br><span><em>$4</em></span>
+                </p>
+            </article>
+            <article>
+                <h3>Chai Tea Latte</h3>
+                <img src="https://i.pinimg.com/736x/ac/f4/0a/acf40a8cca4b776342f7b9dacd84a64f.jpg"
+                    alt="Chai Tea Latte with a sprinkle of cinnamon on top" />
+                <p>
+                    Savor the warmth of our Chai Tea Latte, infused with a harmonious blend of aromatic spices and
+                    sweet, creamy milk. Available hot or cold for your preference.
+                    <br><br><span><em>$8</em></span>
+                </p>
+            </article>
+            <article>
+                <h3>Goat's Cheese and Ham Focaccia Sandwich with Apricot Jam</h3>
+                <img src="https://i.pinimg.com/564x/59/b9/bb/59b9bb771e70ab8acbf57ba52133052b.jpg"
+                    alt="Goat's Cheese and Ham Focaccia Sandwich with Apricot Jam" />
+                <p>
+                    Indulge in our Summer special: a Goat's Cheese and Ham Focaccia Sandwich with Apricot Jam. This
+                    delightful sandwich features lightly toasted focaccia, sweet apricot jam, creamy goat cheese, and
+                    delicate curls of ham.
+                    <br><br><span><em>$18</em></span>
+                </p>
+            </article>
+            <article>
+                <h3>Roast Chicken, Bacon, and Pesto Sandwich</h3>
+                <img src="https://i.pinimg.com/564x/31/04/f9/3104f9a3f9900c97fb3ddebba3052a59.jpg"
+                    alt="Roast Chicken, Bacon, and Pesto Sandwich" />
+                <p>
+                    A hearty sandwich made with juicy roast chicken, crispy bacon, and vibrant pesto, all nestled
+                    between toasted focaccia bread. A savory delight that's sure to satisfy.
+                    <br><br><span><em>$12</em></span>
+                </p>
+            </article>
+            <article>
+                <h3>Smoked Salmon and Poached Eggs on Avocado Toast</h3>
+                <img src="https://i.pinimg.com/564x/81/b1/5e/81b15eb6b98586a7bb8b3b115ca1e302.jpg"
+                    alt="Smoked Salmon and Poached Eggs on Avocado Toast" />
+                <p>
+                    Enjoy a flavorful combination of smoked salmon and perfectly poached eggs atop creamy avocado toast,
+                    offering a deliciously balanced and satisfying meal.
+                    <br><br><span><em>$14</em></span>
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="order-form">
+            <h2>Order Form</h2>
+            <form>
+                <div class="order-section">
+                    <h3>Add Ons & Substitutes:</h3>
+                    <input type="checkbox" id="no-bacon" name="no-bacon">
+                    <label for="no-bacon">No Bacon</label>
+                    <br>
+                    <input type="checkbox" id="sub-cheddar" name="sub-cheddar">
+                    <label for="sub-cheddar">Sub Cheddar</label>
+                    <br>
+                    <input type="checkbox" id="sub-jack-pepper" name="sub-jack-pepper">
+                    <label for="sub-jack-pepper">Sub Jack Pepper</label>
+                    <br>
+                    <input type="checkbox" id="add-side-salad" name="add-side-salad">
+                    <label for="add-side-salad">Add Side Salad</label>
+                    <br>
+                    <input type="checkbox" id="chocolate-chip-cookie" name="chocolate-chip-cookie">
+                    <label for="chocolate-chip-cookie">Chocolate Chip Cookie</label>
+                    <br>
+                    <input type="checkbox" id="brownie" name="brownie">
+                    <label for="brownie">Brownie</label>
+                    <br>
+                    <input type="checkbox" id="extra-pesto" name="extra-pesto">
+                    <label for="extra-pesto">Extra Pesto</label>
+                    <br>
+                    <input type="checkbox" id="extra-cheese" name="extra-cheese">
+                    <label for="extra-cheese">Extra Cheese</label>
+                    <br>
+                </div>
+                <div class="order-section">
+                    <p>
+                        <label for="special-requests">Special Requests:</label>
+                    </p>
+                    <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea>
+                </div>
+                <input type="submit" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Made with love by @meghansm</p>
+    </footer>
+</body>
+
+</html>
