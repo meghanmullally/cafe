@@ -130,14 +130,14 @@
             <img id="header-img" src="https://cdn-icons-png.flaticon.com/128/751/751621.png" alt="Coffee cup logo">
             <ul>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#order-form">Order Form</a></li>
+                <li><a href="#order-form">Place Your Order</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <hr>
         <section id="menu">
-            <h2>Place Your Order</h2>
+            <h2>Menu</h2>
             <article>
                 <h3>Matcha Latte</h3>
                 <img src="https://i.pinimg.com/736x/89/a1/c2/89a1c223457d466f8e278c1f42fc7035.jpg"
@@ -202,8 +202,33 @@
         </section>
         <hr>
         <section id="order-form">
-            <h2>Order Form</h2>
+            <h2>Place Your Order</h2>
             <form>
+                <div class="order-section">
+                    <h3>Menu Items:</h3>
+
+                    <label for="matcha-latte-quantity">Matcha Latte ($8):</label>
+                    <input type="number" id="matcha-latte-quantity" name="matcha-latte-quantity" min="0">
+
+                    <label for="americano-quantity">Americano ($4):</label>
+                    <input type="number" id="americano-quantity" name="americano-quantity" min="0">
+
+                    <label for="chai-latte-quantity">Chai Tea Latte ($8):</label>
+                    <input type="number" id="chai-latte-quantity" name="chai-latte-quantity" min="0">
+
+                    <label for="goat-cheese-sandwich-quantity">Goat's Cheese and Ham Focaccia Sandwich ($18):</label>
+                    <input type="number" id="goat-cheese-sandwich-quantity" name="goat-cheese-sandwich-quantity"
+                        min="0">
+
+                    <label for="chicken-sandwich-quantity">Roast Chicken, Bacon, and Pesto Sandwich ($12):</label>
+                    <input type="number" id="chicken-sandwich-quantity" name="chicken-sandwich-quantity" min="0">
+
+                    <label for="salmon-avocado-toast-quantity">Smoked Salmon and Poached Eggs on Avocado Toast
+                        ($14):</label>
+                    <input type="number" id="salmon-avocado-toast-quantity" name="salmon-avocado-toast-quantity"
+                        min="0">
+                </div>
+
                 <div class="order-section">
                     <h3>Add Ons & Substitutes:</h3>
                     <input type="checkbox" id="no-bacon" name="no-bacon">
@@ -215,34 +240,23 @@
                     <input type="checkbox" id="sub-jack-pepper" name="sub-jack-pepper">
                     <label for="sub-jack-pepper">Sub Jack Pepper</label>
                     <br>
-                    <input type="checkbox" id="add-side-salad" name="add-side-salad">
-                    <label for="add-side-salad">Add Side Salad</label>
+                    <input type="checkbox" id="side-salad" name="side-salad">
+                    <label for="side-salad">Side Salad</label>
                     <br>
-                    <input type="checkbox" id="chocolate-chip-cookie" name="chocolate-chip-cookie">
-                    <label for="chocolate-chip-cookie">Chocolate Chip Cookie</label>
-                    <br>
-                    <input type="checkbox" id="brownie" name="brownie">
-                    <label for="brownie">Brownie</label>
-                    <br>
-                    <input type="checkbox" id="extra-pesto" name="extra-pesto">
-                    <label for="extra-pesto">Extra Pesto</label>
-                    <br>
-                    <input type="checkbox" id="extra-cheese" name="extra-cheese">
-                    <label for="extra-cheese">Extra Cheese</label>
-                    <br>
+                    <input type="checkbox" id="blueberry-muffin" name="blueberry-muffin">
+                    <label for="blueberry-muffin">Blueberry Muffin</label>
                 </div>
                 <div class="order-section">
-                    <p>
-                        <label for="special-requests">Special Requests:</label>
-                    </p>
-                    <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea>
+                    <h3>Additional Notes:</h3>
+                    <textarea id="additional-notes" name="additional-notes" rows="4" cols="50"
+                        placeholder="Enter any additional notes or special instructions here..."></textarea>
                 </div>
                 <input type="submit" value="Go To Checkout">
             </form>
         </section>
     </main>
     <footer>
-        <p>Made with love by @meghansm</p>
+        <p>&copy; 2024 Made with love by @meghansm</p>
     </footer>
 </body>
 
